@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -10,7 +9,7 @@
 
     <groupId>de.eonas.portal.demo</groupId>
     <artifactId>package</artifactId>
-    <version>8.5.1.1-SNAPSHOT</version>
+    <version>8.5.1.1</version>
     <packaging>pom</packaging>
     <name>Portal based on OpenCMs</name>
     <description>TarGz with examples and tomcat</description>
@@ -29,14 +28,14 @@
                         </goals>
                         <configuration>
                             <target>
-                                <unzip src="${de.eonas.portal:pluto-tomcat:zip:package}" dest="target"/>
+                                <unzip src="${de.eonas.portal:pluto-tomcat:zip:package}" dest="target" />
                                 <path id="plutopath">
                                     <dirset dir="target">
-                                        <include name="pluto-tomcat-*"/>
+                                        <include name="pluto-tomcat-*" />
                                     </dirset>
                                 </path>
                                 <property name="pkg-name" refid="plutopath" />
-                                <move file="${pkg-name}" tofile="target/pluto-tomcat"/>
+                                <move file="${pkg-name}" tofile="target/pluto-tomcat" />
                             </target>
                         </configuration>
                     </execution>
