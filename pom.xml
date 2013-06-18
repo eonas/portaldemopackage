@@ -5,12 +5,12 @@
     <parent>
         <artifactId>root</artifactId>
         <groupId>de.eonas.portal.parentpoms</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.1</version>
     </parent>
 
     <groupId>de.eonas.portal.demo</groupId>
     <artifactId>package</artifactId>
-    <version>8.5.1-SNAPSHOT</version>
+    <version>8.5.1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Portal based on OpenCMs</name>
     <description>TarGz with examples and tomcat</description>
@@ -65,34 +65,40 @@
         <dependency>
             <groupId>de.eonas.portal</groupId>
             <artifactId>pluto-tomcat</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
             <type>zip</type>
             <classifier>package</classifier>
         </dependency>
         <dependency>
             <groupId>de.eonas.portal.demo</groupId>
             <artifactId>portal</artifactId>
-            <version>8.5.1-SNAPSHOT</version>
+            <version>8.5.1.1</version>
             <type>war</type>
         </dependency>
         <dependency>
             <groupId>de.eonas.portal.demo.portlets</groupId>
             <artifactId>addressbook</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
             <type>war</type>
         </dependency>
         <dependency>
             <groupId>de.eonas.portal.demo.portlets</groupId>
             <artifactId>rss</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
             <type>war</type>
         </dependency>
         <dependency>
             <groupId>de.eonas.portal.demo.portlets</groupId>
             <artifactId>vote</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
             <type>war</type>
         </dependency>
     </dependencies>
+
+	<scm>
+		<connection>scm:git:git@github.com:eonas/portaldemopackage.git</connection>
+		<developerConnection>scm:git:git@github.com:eonas/portaldemopackage.git</developerConnection>
+		<url>https://github.com/eonas/portaldemopackage.git</url>
+	</scm>
 
 </project>
