@@ -4,7 +4,7 @@
     <parent>
         <artifactId>root</artifactId>
         <groupId>de.eonas.portal.parentpoms</groupId>
-        <version>1.1</version>
+        <version>1.2-SNAPSHOT</version>
     </parent>
 
     <groupId>de.eonas.portal.demo</groupId>
@@ -64,32 +64,32 @@
         <dependency>
             <groupId>de.eonas.portal</groupId>
             <artifactId>pluto-tomcat</artifactId>
-            <version>1.0</version>
+            <version>1.1-SNAPSHOT</version>
             <type>zip</type>
             <classifier>package</classifier>
         </dependency>
         <dependency>
             <groupId>de.eonas.portal.demo</groupId>
             <artifactId>portal</artifactId>
-            <version>8.5.1.2</version>
+            <version>9.0.0.1-SNAPSHOT</version>
             <type>war</type>
         </dependency>
         <dependency>
             <groupId>de.eonas.portal.demo.portlets</groupId>
             <artifactId>addressbook</artifactId>
-            <version>1.0</version>
+            <version>1.1-SNAPSHOT</version>
             <type>war</type>
         </dependency>
         <dependency>
             <groupId>de.eonas.portal.demo.portlets</groupId>
             <artifactId>rss</artifactId>
-            <version>1.0</version>
+            <version>1.1-SNAPSHOT</version>
             <type>war</type>
         </dependency>
         <dependency>
             <groupId>de.eonas.portal.demo.portlets</groupId>
             <artifactId>vote</artifactId>
-            <version>1.0</version>
+            <version>1.1-SNAPSHOT</version>
             <type>war</type>
         </dependency>
     </dependencies>
