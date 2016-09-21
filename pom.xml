@@ -71,7 +71,7 @@
         <dependency>
             <groupId>de.eonas.portal.demo</groupId>
             <artifactId>portal</artifactId>
-            <version>9.0.0.1-SNAPSHOT</version>
+            <version>10.4.7-SNAPSHOT</version>
             <type>war</type>
         </dependency>
         <dependency>
